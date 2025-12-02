@@ -1,0 +1,172 @@
+{
+  "@graph": [{
+    "@id": "https://testdirektoratet.no/dataset-catalog",
+    "dcat:dataset": [{"@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7000-9c78-507e2187c726"}, {"@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7001-88a7-d8a84ffc9be4"}, {"@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7002-b32c-92d8fa5a5afd"}, {"@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7003-8bd3-9a9bfea8352b"}, {"@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7004-8563-954ab23bf19f"}, {"@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7005-b3b0-6e69b2e49f09"}, {"@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7006-90b7-359a8d498cea"}, {"@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7007-a52d-38b647466290"}, {"@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7008-b5fe-cdbf41fda125"}, {"@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7009-976b-575ee3860f78"}],
+    "dct:publisher": {
+        "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:title": {
+        "@language": "en",
+        "@value": "Dataset catalog belonging to 312460726"
+    },
+    "@type": "dcat:Catalog"
+  }, {
+    "@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7000-9c78-507e2187c726",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ade93-07ca-7000-9c78-507e2187c726"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ade93-07ca-7000-9c78-507e2187c726"
+    },
+    "@type": "dcat:Dataset"
+    },{
+    "@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7001-88a7-d8a84ffc9be4",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ade93-07ca-7001-88a7-d8a84ffc9be4"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ade93-07ca-7001-88a7-d8a84ffc9be4"
+    },
+    "@type": "dcat:Dataset"
+    },{
+    "@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7002-b32c-92d8fa5a5afd",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ade93-07ca-7002-b32c-92d8fa5a5afd"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ade93-07ca-7002-b32c-92d8fa5a5afd"
+    },
+    "@type": "dcat:Dataset"
+    },{
+    "@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7003-8bd3-9a9bfea8352b",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ade93-07ca-7003-8bd3-9a9bfea8352b"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ade93-07ca-7003-8bd3-9a9bfea8352b"
+    },
+    "@type": "dcat:Dataset"
+    },{
+    "@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7004-8563-954ab23bf19f",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ade93-07ca-7004-8563-954ab23bf19f"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ade93-07ca-7004-8563-954ab23bf19f"
+    },
+    "@type": "dcat:Dataset"
+    },{
+    "@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7005-b3b0-6e69b2e49f09",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ade93-07ca-7005-b3b0-6e69b2e49f09"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ade93-07ca-7005-b3b0-6e69b2e49f09"
+    },
+    "@type": "dcat:Dataset"
+    },{
+    "@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7006-90b7-359a8d498cea",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ade93-07ca-7006-90b7-359a8d498cea"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ade93-07ca-7006-90b7-359a8d498cea"
+    },
+    "@type": "dcat:Dataset"
+    },{
+    "@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7007-a52d-38b647466290",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ade93-07ca-7007-a52d-38b647466290"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ade93-07ca-7007-a52d-38b647466290"
+    },
+    "@type": "dcat:Dataset"
+    },{
+    "@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7008-b5fe-cdbf41fda125",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ade93-07ca-7008-b5fe-cdbf41fda125"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ade93-07ca-7008-b5fe-cdbf41fda125"
+    },
+    "@type": "dcat:Dataset"
+    },{
+    "@id": "https://testdirektoratet.no/datasets/019ade93-07ca-7009-976b-575ee3860f78",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ade93-07ca-7009-976b-575ee3860f78"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ade93-07ca-7009-976b-575ee3860f78"
+    },
+    "@type": "dcat:Dataset"
+    }],
+  "@context": {
+    "schema": "http://schema.org/",
+    "cpsvno": "https://data.norge.no/vocabulary/cpsvno#",
+    "eli": "http://data.europa.eu/eli/ontology#",
+    "adms": "http://www.w3.org/ns/adms#",
+    "iso": "http://iso.org/25012/2008/dataquality/",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "oa": "http://www.w3.org/ns/oa#",
+    "dct": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "cpsv": "http://purl.org/vocab/cpsv#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  }}

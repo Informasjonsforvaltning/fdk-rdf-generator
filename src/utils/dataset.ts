@@ -1,80 +1,68 @@
 export const getDataset = (id: string) => {
+  const [catalog, datasets] = getCatalog(100000);
+
   return `{
-  "@graph": [
-    {
-      "@id": "https://data.dfo.no/distributions/84189fc8-de97-475e-bfd7-c34c761ceb9b",
-      "dcat:downloadURL": {
-        "@id": "https://adaapnedataprodst.blob.core.windows.net/klimaintensitet/2019/Klimaintensitet_2019.csv"
-      },
-      "dcat:accessURL": {
-        "@id": "https://dfo.no/nokkeltall-og-statistikk/utslippsfaktorer-statlige-innkjop#anchorTOC_Tabell_med_utslippsfaktorer_2"
-      },
-      "dct:title": {
-        "@language": "nb",
-        "@value": "CSV-fil om klimaintensitet"
-      },
-      "dct:license": {
-        "@id": "https://creativecommons.org/licenses/by/4.0/deed.no"
-      },
-      "dct:format": {
-        "@id": "http://publications.europa.eu/resource/authority/file-type/CSV"
-      },
-      "dct:description": {
-        "@language": "nb",
-        "@value": "<div><span style=\"display:inline !important\">CSV-fil med klimaintensiteter.</span></div>"
-      },
-      "@type": "dcat:Distribution"
-    },
-    {
-      "@id": "https://data.dfo.no/datasets/c52f7edf-98b3-404b-a4d2-e2677fb0572d/.well-known/skolem/8ecf70df-6694-3b06-bcb5-1043d5dbbb08",
-      "ns1:hasOrganizationName": {
-        "@language": "nb",
-        "@value": "Direktoratet for forvaltning og økonomistyring"
-      },
-      "ns1:hasEmail": {
-        "@id": "mailto:data@dfo.no"
-      },
-      "@type": "ns1:Organization"
-    },
-    {
-      "@id": "https://data.dfo.no/datasets/c52f7edf-98b3-404b-a4d2-e2677fb0572d",
-      "dcat:distribution": {
-        "@id": "https://data.dfo.no/distributions/84189fc8-de97-475e-bfd7-c34c761ceb9b"
-      },
-      "dct:title": {
-        "@language": "nb",
-        "@value": "Utslippsintensiteter"
-      },
-      "dct:description": {
-        "@language": "nb",
-        "@value": "Dataene består av utslipp (CO2-ekvivalenter) per krone fordelt på innkjøpsrelevante artskontoer i henhold til statsregnskapet. Dataene gir utslippsintensiteter fordelt på scope 1, 2 og 3, samt innland og utland."
-      },
-      "dct:accrualPeriodicity": {
-        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
-      },
-      "dcat:keyword": {
-        "@language": "nb",
-        "@value": "Anskaffelser"
-      },
-      "dct:publisher": {
-        "@id": "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/986252932"
-      },
-      "@type": "dcat:Dataset",
-      "dcat:contactPoint": {
-        "@id": "https://data.dfo.no/datasets/c52f7edf-98b3-404b-a4d2-e2677fb0572d/.well-known/skolem/8ecf70df-6694-3b06-bcb5-1043d5dbbb08"
-      },
-      "dct:accessRights": {
-        "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
-      },
-      "dcat:theme": {
-        "@id": "https://psi.norge.no/los/ord/natur-klima-og-miljo"
-      }
-    }
-  ],
+  "@graph": [${catalog}, ${datasets}],
   "@context": {
+    "schema": "http://schema.org/",
+    "cpsvno": "https://data.norge.no/vocabulary/cpsvno#",
+    "eli": "http://data.europa.eu/eli/ontology#",
+    "adms": "http://www.w3.org/ns/adms#",
+    "iso": "http://iso.org/25012/2008/dataquality/",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "oa": "http://www.w3.org/ns/oa#",
     "dct": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dcat": "http://www.w3.org/ns/dcat#",
-    "ns1": "http://www.w3.org/2006/vcard/ns#"
-  }
-}`;
+    "prov": "http://www.w3.org/ns/prov#",
+    "cpsv": "http://purl.org/vocab/cpsv#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  }}`;
+};
+
+const getCatalog = (length: number = 3): [string, string] => {
+  const ids = Array(length)
+    .fill(0)
+    .map(() => Bun.randomUUIDv7());
+
+  const datasets = ids
+    .map(
+      (id) => `{
+    "@id": "https://testdirektoratet.no/datasets/${id}",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel ${id}"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse ${id}"
+    },
+    "@type": "dcat:Dataset"
+    }`,
+    )
+    .join(",");
+
+  const catalog = `{
+    "@id": "https://testdirektoratet.no/dataset-catalog",
+    "dcat:dataset": [${ids
+      .map((id) => `{"@id": "https://testdirektoratet.no/datasets/${id}"}`)
+      .join(", ")}],
+    "dct:publisher": {
+        "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:title": {
+        "@language": "en",
+        "@value": "Dataset catalog belonging to 312460726"
+    },
+    "@type": "dcat:Catalog"
+  }`;
+
+  return [catalog, datasets];
 };
