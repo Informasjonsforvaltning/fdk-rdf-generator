@@ -1,0 +1,430 @@
+{
+  "@graph": [{
+    "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7000-9a07-d6f62848ce6f",
+    "dcat:endpointURL": {
+      "@id": "https://example.com"
+    },
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae476-8aa2-7000-9a07-d6f62848ce6f"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:license": {
+      "@id": "http://data.norge.no/nlod/no/2.0"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-8aa2-7000-9a07-d6f62848ce6f"
+    },
+    "dct:accessRights": {
+      "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+    },
+    "@type": "dcat:DataService"
+    },{
+    "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7001-8346-9ee8ca6086fb",
+    "dcat:endpointURL": {
+      "@id": "https://example.com"
+    },
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae476-8aa2-7001-8346-9ee8ca6086fb"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:license": {
+      "@id": "http://data.norge.no/nlod/no/2.0"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-8aa2-7001-8346-9ee8ca6086fb"
+    },
+    "dct:accessRights": {
+      "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+    },
+    "@type": "dcat:DataService"
+    },{
+    "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7002-873f-da409735281d",
+    "dcat:endpointURL": {
+      "@id": "https://example.com"
+    },
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae476-8aa2-7002-873f-da409735281d"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:license": {
+      "@id": "http://data.norge.no/nlod/no/2.0"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-8aa2-7002-873f-da409735281d"
+    },
+    "dct:accessRights": {
+      "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+    },
+    "@type": "dcat:DataService"
+    },{
+    "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7003-9a2b-643577d6879b",
+    "dcat:endpointURL": {
+      "@id": "https://example.com"
+    },
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae476-8aa2-7003-9a2b-643577d6879b"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:license": {
+      "@id": "http://data.norge.no/nlod/no/2.0"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-8aa2-7003-9a2b-643577d6879b"
+    },
+    "dct:accessRights": {
+      "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+    },
+    "@type": "dcat:DataService"
+    },{
+    "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7004-89ec-82cbf066ea4b",
+    "dcat:endpointURL": {
+      "@id": "https://example.com"
+    },
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae476-8aa2-7004-89ec-82cbf066ea4b"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:license": {
+      "@id": "http://data.norge.no/nlod/no/2.0"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-8aa2-7004-89ec-82cbf066ea4b"
+    },
+    "dct:accessRights": {
+      "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+    },
+    "@type": "dcat:DataService"
+    },{
+    "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7005-ae49-2176bf283d11",
+    "dcat:endpointURL": {
+      "@id": "https://example.com"
+    },
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae476-8aa2-7005-ae49-2176bf283d11"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:license": {
+      "@id": "http://data.norge.no/nlod/no/2.0"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-8aa2-7005-ae49-2176bf283d11"
+    },
+    "dct:accessRights": {
+      "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+    },
+    "@type": "dcat:DataService"
+    },{
+    "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7006-969b-a2426307e387",
+    "dcat:endpointURL": {
+      "@id": "https://example.com"
+    },
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae476-8aa2-7006-969b-a2426307e387"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:license": {
+      "@id": "http://data.norge.no/nlod/no/2.0"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-8aa2-7006-969b-a2426307e387"
+    },
+    "dct:accessRights": {
+      "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+    },
+    "@type": "dcat:DataService"
+    },{
+    "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7007-8bda-b62c9088db60",
+    "dcat:endpointURL": {
+      "@id": "https://example.com"
+    },
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae476-8aa2-7007-8bda-b62c9088db60"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:license": {
+      "@id": "http://data.norge.no/nlod/no/2.0"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-8aa2-7007-8bda-b62c9088db60"
+    },
+    "dct:accessRights": {
+      "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+    },
+    "@type": "dcat:DataService"
+    },{
+    "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7008-afd0-0e61a5d9eb06",
+    "dcat:endpointURL": {
+      "@id": "https://example.com"
+    },
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae476-8aa2-7008-afd0-0e61a5d9eb06"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:license": {
+      "@id": "http://data.norge.no/nlod/no/2.0"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-8aa2-7008-afd0-0e61a5d9eb06"
+    },
+    "dct:accessRights": {
+      "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+    },
+    "@type": "dcat:DataService"
+    },{
+    "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7009-a01b-c284856ed61e",
+    "dcat:endpointURL": {
+      "@id": "https://example.com"
+    },
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae476-8aa2-7009-a01b-c284856ed61e"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "dct:license": {
+      "@id": "http://data.norge.no/nlod/no/2.0"
+    },
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-8aa2-7009-a01b-c284856ed61e"
+    },
+    "dct:accessRights": {
+      "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+    },
+    "@type": "dcat:DataService"
+    }, {
+    "@id": "https://dataservice-catalog.staging.fellesdatakatalog.digdir.no/catalogs/312460726",
+
+    "dcat:service": [
+      {
+        "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7000-9a07-d6f62848ce6f"
+      },
+      {
+        "@id": "https://testdirektoratet.no/data-services/6290a62ee8ed2c5c6d2adda7"
+      }
+    ],
+    "dct:title": {
+        "@language": "nb",
+        "@value": "Tittel 019ae476-8aa2-7000-9a07-d6f62848ce6f"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "dcat:Catalog"
+  },{
+    "@id": "https://dataservice-catalog.staging.fellesdatakatalog.digdir.no/catalogs/312460726",
+
+    "dcat:service": [
+      {
+        "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7001-8346-9ee8ca6086fb"
+      },
+      {
+        "@id": "https://testdirektoratet.no/data-services/6290a62ee8ed2c5c6d2adda7"
+      }
+    ],
+    "dct:title": {
+        "@language": "nb",
+        "@value": "Tittel 019ae476-8aa2-7001-8346-9ee8ca6086fb"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "dcat:Catalog"
+  },{
+    "@id": "https://dataservice-catalog.staging.fellesdatakatalog.digdir.no/catalogs/312460726",
+
+    "dcat:service": [
+      {
+        "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7002-873f-da409735281d"
+      },
+      {
+        "@id": "https://testdirektoratet.no/data-services/6290a62ee8ed2c5c6d2adda7"
+      }
+    ],
+    "dct:title": {
+        "@language": "nb",
+        "@value": "Tittel 019ae476-8aa2-7002-873f-da409735281d"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "dcat:Catalog"
+  },{
+    "@id": "https://dataservice-catalog.staging.fellesdatakatalog.digdir.no/catalogs/312460726",
+
+    "dcat:service": [
+      {
+        "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7003-9a2b-643577d6879b"
+      },
+      {
+        "@id": "https://testdirektoratet.no/data-services/6290a62ee8ed2c5c6d2adda7"
+      }
+    ],
+    "dct:title": {
+        "@language": "nb",
+        "@value": "Tittel 019ae476-8aa2-7003-9a2b-643577d6879b"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "dcat:Catalog"
+  },{
+    "@id": "https://dataservice-catalog.staging.fellesdatakatalog.digdir.no/catalogs/312460726",
+
+    "dcat:service": [
+      {
+        "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7004-89ec-82cbf066ea4b"
+      },
+      {
+        "@id": "https://testdirektoratet.no/data-services/6290a62ee8ed2c5c6d2adda7"
+      }
+    ],
+    "dct:title": {
+        "@language": "nb",
+        "@value": "Tittel 019ae476-8aa2-7004-89ec-82cbf066ea4b"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "dcat:Catalog"
+  },{
+    "@id": "https://dataservice-catalog.staging.fellesdatakatalog.digdir.no/catalogs/312460726",
+
+    "dcat:service": [
+      {
+        "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7005-ae49-2176bf283d11"
+      },
+      {
+        "@id": "https://testdirektoratet.no/data-services/6290a62ee8ed2c5c6d2adda7"
+      }
+    ],
+    "dct:title": {
+        "@language": "nb",
+        "@value": "Tittel 019ae476-8aa2-7005-ae49-2176bf283d11"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "dcat:Catalog"
+  },{
+    "@id": "https://dataservice-catalog.staging.fellesdatakatalog.digdir.no/catalogs/312460726",
+
+    "dcat:service": [
+      {
+        "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7006-969b-a2426307e387"
+      },
+      {
+        "@id": "https://testdirektoratet.no/data-services/6290a62ee8ed2c5c6d2adda7"
+      }
+    ],
+    "dct:title": {
+        "@language": "nb",
+        "@value": "Tittel 019ae476-8aa2-7006-969b-a2426307e387"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "dcat:Catalog"
+  },{
+    "@id": "https://dataservice-catalog.staging.fellesdatakatalog.digdir.no/catalogs/312460726",
+
+    "dcat:service": [
+      {
+        "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7007-8bda-b62c9088db60"
+      },
+      {
+        "@id": "https://testdirektoratet.no/data-services/6290a62ee8ed2c5c6d2adda7"
+      }
+    ],
+    "dct:title": {
+        "@language": "nb",
+        "@value": "Tittel 019ae476-8aa2-7007-8bda-b62c9088db60"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "dcat:Catalog"
+  },{
+    "@id": "https://dataservice-catalog.staging.fellesdatakatalog.digdir.no/catalogs/312460726",
+
+    "dcat:service": [
+      {
+        "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7008-afd0-0e61a5d9eb06"
+      },
+      {
+        "@id": "https://testdirektoratet.no/data-services/6290a62ee8ed2c5c6d2adda7"
+      }
+    ],
+    "dct:title": {
+        "@language": "nb",
+        "@value": "Tittel 019ae476-8aa2-7008-afd0-0e61a5d9eb06"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "dcat:Catalog"
+  },{
+    "@id": "https://dataservice-catalog.staging.fellesdatakatalog.digdir.no/catalogs/312460726",
+
+    "dcat:service": [
+      {
+        "@id": "https://testdirektoratet.no/data-services/019ae476-8aa2-7009-a01b-c284856ed61e"
+      },
+      {
+        "@id": "https://testdirektoratet.no/data-services/6290a62ee8ed2c5c6d2adda7"
+      }
+    ],
+    "dct:title": {
+        "@language": "nb",
+        "@value": "Tittel 019ae476-8aa2-7009-a01b-c284856ed61e"
+    },
+    "dct:publisher": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "dcat:Catalog"
+  }],
+  "@context": {
+    "dct": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  }}

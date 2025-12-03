@@ -1,0 +1,268 @@
+{
+  "@graph": [{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7000-98ca-e4b006f4ceb3/output",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tjenesteresultat 019ae477-0cce-7000-98ca-e4b006f4ceb3"
+    },
+    "@type": "cv:Output"
+  },{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7001-bf33-1eebad867d24/output",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tjenesteresultat 019ae477-0cce-7001-bf33-1eebad867d24"
+    },
+    "@type": "cv:Output"
+  },{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7002-ad9c-0f171fcfd7ea/output",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tjenesteresultat 019ae477-0cce-7002-ad9c-0f171fcfd7ea"
+    },
+    "@type": "cv:Output"
+  },{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7003-9638-c03c62d100a6/output",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tjenesteresultat 019ae477-0cce-7003-9638-c03c62d100a6"
+    },
+    "@type": "cv:Output"
+  },{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7004-918a-d27e260994d2/output",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tjenesteresultat 019ae477-0cce-7004-918a-d27e260994d2"
+    },
+    "@type": "cv:Output"
+  },{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7005-a78e-4337c2dddd0d/output",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tjenesteresultat 019ae477-0cce-7005-a78e-4337c2dddd0d"
+    },
+    "@type": "cv:Output"
+  },{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7006-bece-0712b9e2d811/output",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tjenesteresultat 019ae477-0cce-7006-bece-0712b9e2d811"
+    },
+    "@type": "cv:Output"
+  },{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7007-8623-faf4f1647e3d/output",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tjenesteresultat 019ae477-0cce-7007-8623-faf4f1647e3d"
+    },
+    "@type": "cv:Output"
+  },{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7008-a1a3-532bedf26717/output",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tjenesteresultat 019ae477-0cce-7008-a1a3-532bedf26717"
+    },
+    "@type": "cv:Output"
+  },{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7009-b2af-6eb67c5a1d68/output",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tjenesteresultat 019ae477-0cce-7009-b2af-6eb67c5a1d68"
+    },
+    "@type": "cv:Output"
+  }, {
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7000-98ca-e4b006f4ceb3",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae477-0cce-7000-98ca-e4b006f4ceb3"
+    },
+    "cpsv:hasCompetentAuthority": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "cpsv:PublicService",
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae477-0cce-7000-98ca-e4b006f4ceb3"
+    },
+    "cv:processingTime": "P4W",
+    "cpsv:produces": {
+      "@id": "https://testdirektoratet.no/service/019ae477-0cce-7000-98ca-e4b006f4ceb3/output"
+    },
+    "dct:identifier": "019ae477-0cce-7000-98ca-e4b006f4ceb3"
+  },{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7001-bf33-1eebad867d24",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae477-0cce-7001-bf33-1eebad867d24"
+    },
+    "cpsv:hasCompetentAuthority": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "cpsv:PublicService",
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae477-0cce-7001-bf33-1eebad867d24"
+    },
+    "cv:processingTime": "P4W",
+    "cpsv:produces": {
+      "@id": "https://testdirektoratet.no/service/019ae477-0cce-7001-bf33-1eebad867d24/output"
+    },
+    "dct:identifier": "019ae477-0cce-7001-bf33-1eebad867d24"
+  },{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7002-ad9c-0f171fcfd7ea",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae477-0cce-7002-ad9c-0f171fcfd7ea"
+    },
+    "cpsv:hasCompetentAuthority": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "cpsv:PublicService",
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae477-0cce-7002-ad9c-0f171fcfd7ea"
+    },
+    "cv:processingTime": "P4W",
+    "cpsv:produces": {
+      "@id": "https://testdirektoratet.no/service/019ae477-0cce-7002-ad9c-0f171fcfd7ea/output"
+    },
+    "dct:identifier": "019ae477-0cce-7002-ad9c-0f171fcfd7ea"
+  },{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7003-9638-c03c62d100a6",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae477-0cce-7003-9638-c03c62d100a6"
+    },
+    "cpsv:hasCompetentAuthority": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "cpsv:PublicService",
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae477-0cce-7003-9638-c03c62d100a6"
+    },
+    "cv:processingTime": "P4W",
+    "cpsv:produces": {
+      "@id": "https://testdirektoratet.no/service/019ae477-0cce-7003-9638-c03c62d100a6/output"
+    },
+    "dct:identifier": "019ae477-0cce-7003-9638-c03c62d100a6"
+  },{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7004-918a-d27e260994d2",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae477-0cce-7004-918a-d27e260994d2"
+    },
+    "cpsv:hasCompetentAuthority": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "cpsv:PublicService",
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae477-0cce-7004-918a-d27e260994d2"
+    },
+    "cv:processingTime": "P4W",
+    "cpsv:produces": {
+      "@id": "https://testdirektoratet.no/service/019ae477-0cce-7004-918a-d27e260994d2/output"
+    },
+    "dct:identifier": "019ae477-0cce-7004-918a-d27e260994d2"
+  },{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7005-a78e-4337c2dddd0d",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae477-0cce-7005-a78e-4337c2dddd0d"
+    },
+    "cpsv:hasCompetentAuthority": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "cpsv:PublicService",
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae477-0cce-7005-a78e-4337c2dddd0d"
+    },
+    "cv:processingTime": "P4W",
+    "cpsv:produces": {
+      "@id": "https://testdirektoratet.no/service/019ae477-0cce-7005-a78e-4337c2dddd0d/output"
+    },
+    "dct:identifier": "019ae477-0cce-7005-a78e-4337c2dddd0d"
+  },{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7006-bece-0712b9e2d811",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae477-0cce-7006-bece-0712b9e2d811"
+    },
+    "cpsv:hasCompetentAuthority": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "cpsv:PublicService",
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae477-0cce-7006-bece-0712b9e2d811"
+    },
+    "cv:processingTime": "P4W",
+    "cpsv:produces": {
+      "@id": "https://testdirektoratet.no/service/019ae477-0cce-7006-bece-0712b9e2d811/output"
+    },
+    "dct:identifier": "019ae477-0cce-7006-bece-0712b9e2d811"
+  },{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7007-8623-faf4f1647e3d",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae477-0cce-7007-8623-faf4f1647e3d"
+    },
+    "cpsv:hasCompetentAuthority": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "cpsv:PublicService",
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae477-0cce-7007-8623-faf4f1647e3d"
+    },
+    "cv:processingTime": "P4W",
+    "cpsv:produces": {
+      "@id": "https://testdirektoratet.no/service/019ae477-0cce-7007-8623-faf4f1647e3d/output"
+    },
+    "dct:identifier": "019ae477-0cce-7007-8623-faf4f1647e3d"
+  },{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7008-a1a3-532bedf26717",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae477-0cce-7008-a1a3-532bedf26717"
+    },
+    "cpsv:hasCompetentAuthority": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "cpsv:PublicService",
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae477-0cce-7008-a1a3-532bedf26717"
+    },
+    "cv:processingTime": "P4W",
+    "cpsv:produces": {
+      "@id": "https://testdirektoratet.no/service/019ae477-0cce-7008-a1a3-532bedf26717/output"
+    },
+    "dct:identifier": "019ae477-0cce-7008-a1a3-532bedf26717"
+  },{
+    "@id": "https://testdirektoratet.no/service/019ae477-0cce-7009-b2af-6eb67c5a1d68",
+    "dct:title": {
+      "@language": "nb",
+      "@value": "Tittel 019ae477-0cce-7009-b2af-6eb67c5a1d68"
+    },
+    "cpsv:hasCompetentAuthority": {
+      "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+    },
+    "@type": "cpsv:PublicService",
+    "dct:description": {
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae477-0cce-7009-b2af-6eb67c5a1d68"
+    },
+    "cv:processingTime": "P4W",
+    "cpsv:produces": {
+      "@id": "https://testdirektoratet.no/service/019ae477-0cce-7009-b2af-6eb67c5a1d68/output"
+    },
+    "dct:identifier": "019ae477-0cce-7009-b2af-6eb67c5a1d68"
+  }],
+  "@context": {
+    "cv": "http://data.europa.eu/m8g/",
+    "dct": "http://purl.org/dc/terms/",
+    "cpsv": "http://purl.org/vocab/cpsv#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  }}

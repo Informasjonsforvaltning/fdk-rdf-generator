@@ -1,0 +1,500 @@
+{
+  "@graph": [{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7000-a115-06c18ee73dbf/definition/source",
+    "rdfs:label": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7000-a115-06c18ee73dbf"
+    },
+    "@type": "rdfs:Resource"
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7001-aef4-76659a319920/definition/source",
+    "rdfs:label": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7001-aef4-76659a319920"
+    },
+    "@type": "rdfs:Resource"
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7002-9b03-bab76f66ea79/definition/source",
+    "rdfs:label": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7002-9b03-bab76f66ea79"
+    },
+    "@type": "rdfs:Resource"
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7003-b7d0-1de94652e931/definition/source",
+    "rdfs:label": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7003-b7d0-1de94652e931"
+    },
+    "@type": "rdfs:Resource"
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7004-a183-8df4ed4ed59b/definition/source",
+    "rdfs:label": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7004-a183-8df4ed4ed59b"
+    },
+    "@type": "rdfs:Resource"
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7005-a4e4-6eea02a30c0b/definition/source",
+    "rdfs:label": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7005-a4e4-6eea02a30c0b"
+    },
+    "@type": "rdfs:Resource"
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7006-b8f6-d27ab002f9b6/definition/source",
+    "rdfs:label": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7006-b8f6-d27ab002f9b6"
+    },
+    "@type": "rdfs:Resource"
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7007-94ad-fe71a57d00ea/definition/source",
+    "rdfs:label": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7007-94ad-fe71a57d00ea"
+    },
+    "@type": "rdfs:Resource"
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7008-958f-173c11c38352/definition/source",
+    "rdfs:label": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7008-958f-173c11c38352"
+    },
+    "@type": "rdfs:Resource"
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7009-ae78-961f5897660f/definition/source",
+    "rdfs:label": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7009-ae78-961f5897660f"
+    },
+    "@type": "rdfs:Resource"
+  }, {
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7000-a115-06c18ee73dbf/definition",
+    "skosno:relationshipWithSource": {
+      "@id": "https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source"
+    },
+    "dct:source": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7000-a115-06c18ee73dbf/definition/source"
+    },
+    "rdf:value": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7000-a115-06c18ee73dbf"
+    },
+    "@type": "http://publications.europa.eu/ontology/euvoc#XlNote"
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7001-aef4-76659a319920/definition",
+    "skosno:relationshipWithSource": {
+      "@id": "https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source"
+    },
+    "dct:source": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7001-aef4-76659a319920/definition/source"
+    },
+    "rdf:value": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7001-aef4-76659a319920"
+    },
+    "@type": "http://publications.europa.eu/ontology/euvoc#XlNote"
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7002-9b03-bab76f66ea79/definition",
+    "skosno:relationshipWithSource": {
+      "@id": "https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source"
+    },
+    "dct:source": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7002-9b03-bab76f66ea79/definition/source"
+    },
+    "rdf:value": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7002-9b03-bab76f66ea79"
+    },
+    "@type": "http://publications.europa.eu/ontology/euvoc#XlNote"
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7003-b7d0-1de94652e931/definition",
+    "skosno:relationshipWithSource": {
+      "@id": "https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source"
+    },
+    "dct:source": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7003-b7d0-1de94652e931/definition/source"
+    },
+    "rdf:value": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7003-b7d0-1de94652e931"
+    },
+    "@type": "http://publications.europa.eu/ontology/euvoc#XlNote"
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7004-a183-8df4ed4ed59b/definition",
+    "skosno:relationshipWithSource": {
+      "@id": "https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source"
+    },
+    "dct:source": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7004-a183-8df4ed4ed59b/definition/source"
+    },
+    "rdf:value": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7004-a183-8df4ed4ed59b"
+    },
+    "@type": "http://publications.europa.eu/ontology/euvoc#XlNote"
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7005-a4e4-6eea02a30c0b/definition",
+    "skosno:relationshipWithSource": {
+      "@id": "https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source"
+    },
+    "dct:source": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7005-a4e4-6eea02a30c0b/definition/source"
+    },
+    "rdf:value": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7005-a4e4-6eea02a30c0b"
+    },
+    "@type": "http://publications.europa.eu/ontology/euvoc#XlNote"
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7006-b8f6-d27ab002f9b6/definition",
+    "skosno:relationshipWithSource": {
+      "@id": "https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source"
+    },
+    "dct:source": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7006-b8f6-d27ab002f9b6/definition/source"
+    },
+    "rdf:value": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7006-b8f6-d27ab002f9b6"
+    },
+    "@type": "http://publications.europa.eu/ontology/euvoc#XlNote"
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7007-94ad-fe71a57d00ea/definition",
+    "skosno:relationshipWithSource": {
+      "@id": "https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source"
+    },
+    "dct:source": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7007-94ad-fe71a57d00ea/definition/source"
+    },
+    "rdf:value": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7007-94ad-fe71a57d00ea"
+    },
+    "@type": "http://publications.europa.eu/ontology/euvoc#XlNote"
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7008-958f-173c11c38352/definition",
+    "skosno:relationshipWithSource": {
+      "@id": "https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source"
+    },
+    "dct:source": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7008-958f-173c11c38352/definition/source"
+    },
+    "rdf:value": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7008-958f-173c11c38352"
+    },
+    "@type": "http://publications.europa.eu/ontology/euvoc#XlNote"
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7009-ae78-961f5897660f/definition",
+    "skosno:relationshipWithSource": {
+      "@id": "https://data.norge.no/vocabulary/relationship-with-source-type#derived-from-source"
+    },
+    "dct:source": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7009-ae78-961f5897660f/definition/source"
+    },
+    "rdf:value": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7009-ae78-961f5897660f"
+    },
+    "@type": "http://publications.europa.eu/ontology/euvoc#XlNote"
+  }, {
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7000-a115-06c18ee73dbf",
+    "http://publications.europa.eu/ontology/euvoc#startDate": {
+      "@value": "2000-01-01",
+      "@type": "xsd:date"
+    },
+    "@type": "skos:Concept",
+    "dct:modified": {
+      "@value": "2001-01-01",
+      "@type": "xsd:date"
+    },
+    "http://publications.europa.eu/ontology/euvoc#status": {
+      "@id": "http://publications.europa.eu/resource/authority/concept-status/CURRENT"
+    },
+    "skos:prefLabel": [{
+      "@language": "nb",
+      "@value": "prefLabel 019ae475-2a40-7000-a115-06c18ee73dbf"
+    }],
+    "skos:scopeNote": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7000-a115-06c18ee73dbf"
+    },
+    "dct:publisher": {
+      "@id": "https://data.brreg.no/enhetsregisteret/api/enheter/974761076"
+    },
+    "http://publications.europa.eu/ontology/euvoc#xlDefinition": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7000-a115-06c18ee73dbf/definition/source"
+    }
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7001-aef4-76659a319920",
+    "http://publications.europa.eu/ontology/euvoc#startDate": {
+      "@value": "2000-01-01",
+      "@type": "xsd:date"
+    },
+    "@type": "skos:Concept",
+    "dct:modified": {
+      "@value": "2001-01-01",
+      "@type": "xsd:date"
+    },
+    "http://publications.europa.eu/ontology/euvoc#status": {
+      "@id": "http://publications.europa.eu/resource/authority/concept-status/CURRENT"
+    },
+    "skos:prefLabel": [{
+      "@language": "nb",
+      "@value": "prefLabel 019ae475-2a40-7001-aef4-76659a319920"
+    }],
+    "skos:scopeNote": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7001-aef4-76659a319920"
+    },
+    "dct:publisher": {
+      "@id": "https://data.brreg.no/enhetsregisteret/api/enheter/974761076"
+    },
+    "http://publications.europa.eu/ontology/euvoc#xlDefinition": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7001-aef4-76659a319920/definition/source"
+    }
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7002-9b03-bab76f66ea79",
+    "http://publications.europa.eu/ontology/euvoc#startDate": {
+      "@value": "2000-01-01",
+      "@type": "xsd:date"
+    },
+    "@type": "skos:Concept",
+    "dct:modified": {
+      "@value": "2001-01-01",
+      "@type": "xsd:date"
+    },
+    "http://publications.europa.eu/ontology/euvoc#status": {
+      "@id": "http://publications.europa.eu/resource/authority/concept-status/CURRENT"
+    },
+    "skos:prefLabel": [{
+      "@language": "nb",
+      "@value": "prefLabel 019ae475-2a40-7002-9b03-bab76f66ea79"
+    }],
+    "skos:scopeNote": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7002-9b03-bab76f66ea79"
+    },
+    "dct:publisher": {
+      "@id": "https://data.brreg.no/enhetsregisteret/api/enheter/974761076"
+    },
+    "http://publications.europa.eu/ontology/euvoc#xlDefinition": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7002-9b03-bab76f66ea79/definition/source"
+    }
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7003-b7d0-1de94652e931",
+    "http://publications.europa.eu/ontology/euvoc#startDate": {
+      "@value": "2000-01-01",
+      "@type": "xsd:date"
+    },
+    "@type": "skos:Concept",
+    "dct:modified": {
+      "@value": "2001-01-01",
+      "@type": "xsd:date"
+    },
+    "http://publications.europa.eu/ontology/euvoc#status": {
+      "@id": "http://publications.europa.eu/resource/authority/concept-status/CURRENT"
+    },
+    "skos:prefLabel": [{
+      "@language": "nb",
+      "@value": "prefLabel 019ae475-2a40-7003-b7d0-1de94652e931"
+    }],
+    "skos:scopeNote": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7003-b7d0-1de94652e931"
+    },
+    "dct:publisher": {
+      "@id": "https://data.brreg.no/enhetsregisteret/api/enheter/974761076"
+    },
+    "http://publications.europa.eu/ontology/euvoc#xlDefinition": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7003-b7d0-1de94652e931/definition/source"
+    }
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7004-a183-8df4ed4ed59b",
+    "http://publications.europa.eu/ontology/euvoc#startDate": {
+      "@value": "2000-01-01",
+      "@type": "xsd:date"
+    },
+    "@type": "skos:Concept",
+    "dct:modified": {
+      "@value": "2001-01-01",
+      "@type": "xsd:date"
+    },
+    "http://publications.europa.eu/ontology/euvoc#status": {
+      "@id": "http://publications.europa.eu/resource/authority/concept-status/CURRENT"
+    },
+    "skos:prefLabel": [{
+      "@language": "nb",
+      "@value": "prefLabel 019ae475-2a40-7004-a183-8df4ed4ed59b"
+    }],
+    "skos:scopeNote": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7004-a183-8df4ed4ed59b"
+    },
+    "dct:publisher": {
+      "@id": "https://data.brreg.no/enhetsregisteret/api/enheter/974761076"
+    },
+    "http://publications.europa.eu/ontology/euvoc#xlDefinition": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7004-a183-8df4ed4ed59b/definition/source"
+    }
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7005-a4e4-6eea02a30c0b",
+    "http://publications.europa.eu/ontology/euvoc#startDate": {
+      "@value": "2000-01-01",
+      "@type": "xsd:date"
+    },
+    "@type": "skos:Concept",
+    "dct:modified": {
+      "@value": "2001-01-01",
+      "@type": "xsd:date"
+    },
+    "http://publications.europa.eu/ontology/euvoc#status": {
+      "@id": "http://publications.europa.eu/resource/authority/concept-status/CURRENT"
+    },
+    "skos:prefLabel": [{
+      "@language": "nb",
+      "@value": "prefLabel 019ae475-2a40-7005-a4e4-6eea02a30c0b"
+    }],
+    "skos:scopeNote": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7005-a4e4-6eea02a30c0b"
+    },
+    "dct:publisher": {
+      "@id": "https://data.brreg.no/enhetsregisteret/api/enheter/974761076"
+    },
+    "http://publications.europa.eu/ontology/euvoc#xlDefinition": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7005-a4e4-6eea02a30c0b/definition/source"
+    }
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7006-b8f6-d27ab002f9b6",
+    "http://publications.europa.eu/ontology/euvoc#startDate": {
+      "@value": "2000-01-01",
+      "@type": "xsd:date"
+    },
+    "@type": "skos:Concept",
+    "dct:modified": {
+      "@value": "2001-01-01",
+      "@type": "xsd:date"
+    },
+    "http://publications.europa.eu/ontology/euvoc#status": {
+      "@id": "http://publications.europa.eu/resource/authority/concept-status/CURRENT"
+    },
+    "skos:prefLabel": [{
+      "@language": "nb",
+      "@value": "prefLabel 019ae475-2a40-7006-b8f6-d27ab002f9b6"
+    }],
+    "skos:scopeNote": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7006-b8f6-d27ab002f9b6"
+    },
+    "dct:publisher": {
+      "@id": "https://data.brreg.no/enhetsregisteret/api/enheter/974761076"
+    },
+    "http://publications.europa.eu/ontology/euvoc#xlDefinition": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7006-b8f6-d27ab002f9b6/definition/source"
+    }
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7007-94ad-fe71a57d00ea",
+    "http://publications.europa.eu/ontology/euvoc#startDate": {
+      "@value": "2000-01-01",
+      "@type": "xsd:date"
+    },
+    "@type": "skos:Concept",
+    "dct:modified": {
+      "@value": "2001-01-01",
+      "@type": "xsd:date"
+    },
+    "http://publications.europa.eu/ontology/euvoc#status": {
+      "@id": "http://publications.europa.eu/resource/authority/concept-status/CURRENT"
+    },
+    "skos:prefLabel": [{
+      "@language": "nb",
+      "@value": "prefLabel 019ae475-2a40-7007-94ad-fe71a57d00ea"
+    }],
+    "skos:scopeNote": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7007-94ad-fe71a57d00ea"
+    },
+    "dct:publisher": {
+      "@id": "https://data.brreg.no/enhetsregisteret/api/enheter/974761076"
+    },
+    "http://publications.europa.eu/ontology/euvoc#xlDefinition": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7007-94ad-fe71a57d00ea/definition/source"
+    }
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7008-958f-173c11c38352",
+    "http://publications.europa.eu/ontology/euvoc#startDate": {
+      "@value": "2000-01-01",
+      "@type": "xsd:date"
+    },
+    "@type": "skos:Concept",
+    "dct:modified": {
+      "@value": "2001-01-01",
+      "@type": "xsd:date"
+    },
+    "http://publications.europa.eu/ontology/euvoc#status": {
+      "@id": "http://publications.europa.eu/resource/authority/concept-status/CURRENT"
+    },
+    "skos:prefLabel": [{
+      "@language": "nb",
+      "@value": "prefLabel 019ae475-2a40-7008-958f-173c11c38352"
+    }],
+    "skos:scopeNote": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7008-958f-173c11c38352"
+    },
+    "dct:publisher": {
+      "@id": "https://data.brreg.no/enhetsregisteret/api/enheter/974761076"
+    },
+    "http://publications.europa.eu/ontology/euvoc#xlDefinition": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7008-958f-173c11c38352/definition/source"
+    }
+  },{
+    "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7009-ae78-961f5897660f",
+    "http://publications.europa.eu/ontology/euvoc#startDate": {
+      "@value": "2000-01-01",
+      "@type": "xsd:date"
+    },
+    "@type": "skos:Concept",
+    "dct:modified": {
+      "@value": "2001-01-01",
+      "@type": "xsd:date"
+    },
+    "http://publications.europa.eu/ontology/euvoc#status": {
+      "@id": "http://publications.europa.eu/resource/authority/concept-status/CURRENT"
+    },
+    "skos:prefLabel": [{
+      "@language": "nb",
+      "@value": "prefLabel 019ae475-2a40-7009-ae78-961f5897660f"
+    }],
+    "skos:scopeNote": {
+      "@language": "nb",
+      "@value": "Verdi 019ae475-2a40-7009-ae78-961f5897660f"
+    },
+    "dct:publisher": {
+      "@id": "https://data.brreg.no/enhetsregisteret/api/enheter/974761076"
+    },
+    "http://publications.europa.eu/ontology/euvoc#xlDefinition": {
+      "@id": "https://testdirektoratet.no/concept/019ae475-2a40-7009-ae78-961f5897660f/definition/source"
+    }
+  }],
+  "@context": {
+    "schema": "http://schema.org/",
+    "adms": "http://www.w3.org/ns/adms#",
+    "iso": "http://iso.org/25012/2008/dataquality/",
+    "spdx": "http://spdx.org/rdf/terms#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "skosno": "https://data.norge.no/vocabulary/skosno#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "oa": "http://www.w3.org/ns/prov#",
+    "dct": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  }}

@@ -1,0 +1,305 @@
+{
+  "@graph": [{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7000-99a8-3a82af42e836",
+    "dct:description": [{
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-ba27-7000-99a8-3a82af42e836"
+    }],
+    "dct:title": [{
+      "@language": "nb",
+      "@value": "Tittel 019ae476-ba27-7000-99a8-3a82af42e836"
+    }],
+    "dct:identifier": {
+      "@value": "https://testdirektoratet.no/event/019ae476-ba27-7000-99a8-3a82af42e836",
+      "@type": "xsd:anyURI"
+    },
+    "dct:subject": {
+      "@id": "https://testdirektoratet.no/event/019ae476-ba27-7000-99a8-3a82af42e836/subject"
+    },
+    "dct:type": {
+      "@id": "https://data.norge.no/vocabulary/event-type#data-changed"
+    },
+    "@type": "cv:Event"
+  },{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7001-9d22-41a351aaab45",
+    "dct:description": [{
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-ba27-7001-9d22-41a351aaab45"
+    }],
+    "dct:title": [{
+      "@language": "nb",
+      "@value": "Tittel 019ae476-ba27-7001-9d22-41a351aaab45"
+    }],
+    "dct:identifier": {
+      "@value": "https://testdirektoratet.no/event/019ae476-ba27-7001-9d22-41a351aaab45",
+      "@type": "xsd:anyURI"
+    },
+    "dct:subject": {
+      "@id": "https://testdirektoratet.no/event/019ae476-ba27-7001-9d22-41a351aaab45/subject"
+    },
+    "dct:type": {
+      "@id": "https://data.norge.no/vocabulary/event-type#data-changed"
+    },
+    "@type": "cv:Event"
+  },{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7002-aab7-ba8b3f03c5c5",
+    "dct:description": [{
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-ba27-7002-aab7-ba8b3f03c5c5"
+    }],
+    "dct:title": [{
+      "@language": "nb",
+      "@value": "Tittel 019ae476-ba27-7002-aab7-ba8b3f03c5c5"
+    }],
+    "dct:identifier": {
+      "@value": "https://testdirektoratet.no/event/019ae476-ba27-7002-aab7-ba8b3f03c5c5",
+      "@type": "xsd:anyURI"
+    },
+    "dct:subject": {
+      "@id": "https://testdirektoratet.no/event/019ae476-ba27-7002-aab7-ba8b3f03c5c5/subject"
+    },
+    "dct:type": {
+      "@id": "https://data.norge.no/vocabulary/event-type#data-changed"
+    },
+    "@type": "cv:Event"
+  },{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7003-82d4-983e97a9bb85",
+    "dct:description": [{
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-ba27-7003-82d4-983e97a9bb85"
+    }],
+    "dct:title": [{
+      "@language": "nb",
+      "@value": "Tittel 019ae476-ba27-7003-82d4-983e97a9bb85"
+    }],
+    "dct:identifier": {
+      "@value": "https://testdirektoratet.no/event/019ae476-ba27-7003-82d4-983e97a9bb85",
+      "@type": "xsd:anyURI"
+    },
+    "dct:subject": {
+      "@id": "https://testdirektoratet.no/event/019ae476-ba27-7003-82d4-983e97a9bb85/subject"
+    },
+    "dct:type": {
+      "@id": "https://data.norge.no/vocabulary/event-type#data-changed"
+    },
+    "@type": "cv:Event"
+  },{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7004-962b-3ed19dd4e39f",
+    "dct:description": [{
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-ba27-7004-962b-3ed19dd4e39f"
+    }],
+    "dct:title": [{
+      "@language": "nb",
+      "@value": "Tittel 019ae476-ba27-7004-962b-3ed19dd4e39f"
+    }],
+    "dct:identifier": {
+      "@value": "https://testdirektoratet.no/event/019ae476-ba27-7004-962b-3ed19dd4e39f",
+      "@type": "xsd:anyURI"
+    },
+    "dct:subject": {
+      "@id": "https://testdirektoratet.no/event/019ae476-ba27-7004-962b-3ed19dd4e39f/subject"
+    },
+    "dct:type": {
+      "@id": "https://data.norge.no/vocabulary/event-type#data-changed"
+    },
+    "@type": "cv:Event"
+  },{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7005-bc17-f820cf07dd8c",
+    "dct:description": [{
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-ba27-7005-bc17-f820cf07dd8c"
+    }],
+    "dct:title": [{
+      "@language": "nb",
+      "@value": "Tittel 019ae476-ba27-7005-bc17-f820cf07dd8c"
+    }],
+    "dct:identifier": {
+      "@value": "https://testdirektoratet.no/event/019ae476-ba27-7005-bc17-f820cf07dd8c",
+      "@type": "xsd:anyURI"
+    },
+    "dct:subject": {
+      "@id": "https://testdirektoratet.no/event/019ae476-ba27-7005-bc17-f820cf07dd8c/subject"
+    },
+    "dct:type": {
+      "@id": "https://data.norge.no/vocabulary/event-type#data-changed"
+    },
+    "@type": "cv:Event"
+  },{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7006-9bbe-9e3a2710e3cc",
+    "dct:description": [{
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-ba27-7006-9bbe-9e3a2710e3cc"
+    }],
+    "dct:title": [{
+      "@language": "nb",
+      "@value": "Tittel 019ae476-ba27-7006-9bbe-9e3a2710e3cc"
+    }],
+    "dct:identifier": {
+      "@value": "https://testdirektoratet.no/event/019ae476-ba27-7006-9bbe-9e3a2710e3cc",
+      "@type": "xsd:anyURI"
+    },
+    "dct:subject": {
+      "@id": "https://testdirektoratet.no/event/019ae476-ba27-7006-9bbe-9e3a2710e3cc/subject"
+    },
+    "dct:type": {
+      "@id": "https://data.norge.no/vocabulary/event-type#data-changed"
+    },
+    "@type": "cv:Event"
+  },{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7007-b60b-193afe46e00c",
+    "dct:description": [{
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-ba27-7007-b60b-193afe46e00c"
+    }],
+    "dct:title": [{
+      "@language": "nb",
+      "@value": "Tittel 019ae476-ba27-7007-b60b-193afe46e00c"
+    }],
+    "dct:identifier": {
+      "@value": "https://testdirektoratet.no/event/019ae476-ba27-7007-b60b-193afe46e00c",
+      "@type": "xsd:anyURI"
+    },
+    "dct:subject": {
+      "@id": "https://testdirektoratet.no/event/019ae476-ba27-7007-b60b-193afe46e00c/subject"
+    },
+    "dct:type": {
+      "@id": "https://data.norge.no/vocabulary/event-type#data-changed"
+    },
+    "@type": "cv:Event"
+  },{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7008-9979-71c632609f5f",
+    "dct:description": [{
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-ba27-7008-9979-71c632609f5f"
+    }],
+    "dct:title": [{
+      "@language": "nb",
+      "@value": "Tittel 019ae476-ba27-7008-9979-71c632609f5f"
+    }],
+    "dct:identifier": {
+      "@value": "https://testdirektoratet.no/event/019ae476-ba27-7008-9979-71c632609f5f",
+      "@type": "xsd:anyURI"
+    },
+    "dct:subject": {
+      "@id": "https://testdirektoratet.no/event/019ae476-ba27-7008-9979-71c632609f5f/subject"
+    },
+    "dct:type": {
+      "@id": "https://data.norge.no/vocabulary/event-type#data-changed"
+    },
+    "@type": "cv:Event"
+  },{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7009-997d-e7a2d3516fc3",
+    "dct:description": [{
+      "@language": "nb",
+      "@value": "Beskrivelse 019ae476-ba27-7009-997d-e7a2d3516fc3"
+    }],
+    "dct:title": [{
+      "@language": "nb",
+      "@value": "Tittel 019ae476-ba27-7009-997d-e7a2d3516fc3"
+    }],
+    "dct:identifier": {
+      "@value": "https://testdirektoratet.no/event/019ae476-ba27-7009-997d-e7a2d3516fc3",
+      "@type": "xsd:anyURI"
+    },
+    "dct:subject": {
+      "@id": "https://testdirektoratet.no/event/019ae476-ba27-7009-997d-e7a2d3516fc3/subject"
+    },
+    "dct:type": {
+      "@id": "https://data.norge.no/vocabulary/event-type#data-changed"
+    },
+    "@type": "cv:Event"
+  }, {
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7000-99a8-3a82af42e836/subject",
+    "skos:prefLabel": {
+      "@language": "nb",
+      "@value": "Begrepstittel 019ae476-ba27-7000-99a8-3a82af42e836"
+    },
+    "@type": "skos:Concept"
+  },{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7001-9d22-41a351aaab45/subject",
+    "skos:prefLabel": {
+      "@language": "nb",
+      "@value": "Begrepstittel 019ae476-ba27-7001-9d22-41a351aaab45"
+    },
+    "@type": "skos:Concept"
+  },{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7002-aab7-ba8b3f03c5c5/subject",
+    "skos:prefLabel": {
+      "@language": "nb",
+      "@value": "Begrepstittel 019ae476-ba27-7002-aab7-ba8b3f03c5c5"
+    },
+    "@type": "skos:Concept"
+  },{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7003-82d4-983e97a9bb85/subject",
+    "skos:prefLabel": {
+      "@language": "nb",
+      "@value": "Begrepstittel 019ae476-ba27-7003-82d4-983e97a9bb85"
+    },
+    "@type": "skos:Concept"
+  },{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7004-962b-3ed19dd4e39f/subject",
+    "skos:prefLabel": {
+      "@language": "nb",
+      "@value": "Begrepstittel 019ae476-ba27-7004-962b-3ed19dd4e39f"
+    },
+    "@type": "skos:Concept"
+  },{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7005-bc17-f820cf07dd8c/subject",
+    "skos:prefLabel": {
+      "@language": "nb",
+      "@value": "Begrepstittel 019ae476-ba27-7005-bc17-f820cf07dd8c"
+    },
+    "@type": "skos:Concept"
+  },{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7006-9bbe-9e3a2710e3cc/subject",
+    "skos:prefLabel": {
+      "@language": "nb",
+      "@value": "Begrepstittel 019ae476-ba27-7006-9bbe-9e3a2710e3cc"
+    },
+    "@type": "skos:Concept"
+  },{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7007-b60b-193afe46e00c/subject",
+    "skos:prefLabel": {
+      "@language": "nb",
+      "@value": "Begrepstittel 019ae476-ba27-7007-b60b-193afe46e00c"
+    },
+    "@type": "skos:Concept"
+  },{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7008-9979-71c632609f5f/subject",
+    "skos:prefLabel": {
+      "@language": "nb",
+      "@value": "Begrepstittel 019ae476-ba27-7008-9979-71c632609f5f"
+    },
+    "@type": "skos:Concept"
+  },{
+    "@id": "https://testdirektoratet.no/event/019ae476-ba27-7009-997d-e7a2d3516fc3/subject",
+    "skos:prefLabel": {
+      "@language": "nb",
+      "@value": "Begrepstittel 019ae476-ba27-7009-997d-e7a2d3516fc3"
+    },
+    "@type": "skos:Concept"
+  }],
+  "@context": {
+    "schema": "http://schema.org/",
+    "cpsvno": "https://data.norge.no/vocabulary/cpsvno#",
+    "eli": "http://data.europa.eu/eli/ontology#",
+    "adms": "http://www.w3.org/ns/adms#",
+    "org": "http://www.w3.org/ns/org#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#",
+    "cv": "http://data.europa.eu/m8g/",
+    "dct": "http://purl.org/dc/terms/",
+    "cccev": "http://data.europa.eu/m8g/cccev/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcatno": "https://data.norge.no/vocabulary/dcatno#",
+    "time": "ttp://www.w3.org/2006/time#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "locn": "http://www.w3.org/ns/locn#",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "cpsv": "http://purl.org/vocab/cpsv#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  }}
