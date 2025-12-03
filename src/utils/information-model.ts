@@ -1,7 +1,11 @@
-export const getInformationmodel = () => {
-  const id = Bun.randomUUIDv7();
+import { generateIds } from "./id";
 
-  const model = `{
+export const getInformationmodel = () => {
+  const ids = generateIds();
+
+  const model = ids
+    .map(
+      (id) => `{
     "@id": "https://testdirektoratet.no/information-model/${id}",
     "dct:issued": {
       "@value": "2012-01-01T00:00:00+01:00",
@@ -45,9 +49,13 @@ export const getInformationmodel = () => {
       "@language": "nb",
       "@value": "Adresse"
     }
-  }`;
+    }`,
+    )
+    .join(",");
 
-  const catalog = `{
+  const catalog = ids
+    .map(
+      (id) => `{
     "@id": "digdir:Katalog",
     "modelldcatno:model": [{
       "@id": "https://testdirektoratet.no/information-model/${id}"
@@ -70,7 +78,9 @@ export const getInformationmodel = () => {
       "dcat:Catalog",
       "owl:NamedIndividual"
     ]
-  }`;
+  }`,
+    )
+    .join(",");
 
   return `{
   "@graph": [${model}, ${catalog}],
