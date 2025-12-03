@@ -18,12 +18,8 @@ bun install
 bun dev
 ```
 
-3. Build
+4. Generate test data
 
-```bash
-bun run build
 ```
-
-4. Deploy
-
-todo
+bun run generate
+```
