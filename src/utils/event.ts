@@ -1,4 +1,4 @@
-import { generateIds } from "./id";
+import { generateIds } from "./string";
 
 export const getEvent = () => {
   const ids = generateIds();
@@ -9,7 +9,7 @@ export const getEvent = () => {
     "@id": "https://testdirektoratet.no/event/${id}",
     "dct:description": [{
       "@language": "nb",
-      "@value": "Beskrivelse ${id}"
+      "@value": "Beskrivelse ${id}: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus nunc in felis pellentesque, ac gravida massa cursus. Maecenas viverra viverra justo eget facilisis."
     }],
     "dct:title": [{
       "@language": "nb",
@@ -25,7 +25,10 @@ export const getEvent = () => {
     "dct:type": {
       "@id": "https://data.norge.no/vocabulary/event-type#data-changed"
     },
-    "@type": "cv:Event"
+    "@type": "cv:Event",
+    "cpsvno:mayTrigger": {
+      "@id": "https://testdirektoratet.no/service/relation"
+    }
   }`,
     )
     .join(",");

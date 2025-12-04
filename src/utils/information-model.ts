@@ -1,4 +1,4 @@
-import { generateIds } from "./id";
+import { generateIds } from "./string";
 
 export const getInformationmodel = () => {
   const ids = generateIds();
@@ -40,7 +40,7 @@ export const getInformationmodel = () => {
     },
     "dct:description": {
       "@language": "nb",
-      "@value": "Beskrivelse ${id}"
+      "@value": "Beskrivelse ${id}: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus nunc in felis pellentesque, ac gravida massa cursus. Maecenas viverra viverra justo eget facilisis."
     },
     "dct:spatial": {
       "@id": "http://publications.europa.eu/resource/authority/country/NOR"

@@ -1,4 +1,4 @@
-import { generateIds } from "./id";
+import { generateIds } from "./string";
 
 export const getConcept = () => {
   const ids = generateIds();
@@ -16,7 +16,7 @@ export const getConcept = () => {
     )
     .join(",");
 
-  const euvoc = ids
+  const definition = ids
     .map(
       (id) => `{
     "@id": "https://testdirektoratet.no/concept/${id}/definition",
@@ -28,7 +28,7 @@ export const getConcept = () => {
     },
     "rdf:value": {
       "@language": "nb",
-      "@value": "Verdi ${id}"
+      "@value": "Verdi ${id}: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus nunc in felis pellentesque, ac gravida massa cursus. Maecenas viverra viverra justo eget facilisis."
     },
     "@type": "http://publications.europa.eu/ontology/euvoc#XlNote"
   }`,
@@ -43,9 +43,17 @@ export const getConcept = () => {
       "@value": "2000-01-01",
       "@type": "xsd:date"
     },
+    "http://publications.europa.eu/ontology/euvoc#endDate": {
+      "@value": "2002-01-01",
+      "@type": "xsd:date"
+    },
     "@type": "skos:Concept",
     "dct:modified": {
       "@value": "2001-01-01",
+      "@type": "xsd:date"
+    },
+    "dct:issued": {
+      "@value": "1999-01-01",
       "@type": "xsd:date"
     },
     "http://publications.europa.eu/ontology/euvoc#status": {
@@ -53,7 +61,7 @@ export const getConcept = () => {
     },
     "skos:prefLabel": [{
       "@language": "nb",
-      "@value": "prefLabel ${id}"
+      "@value": "Tittel ${id}"
     }],
     "skos:scopeNote": {
       "@language": "nb",
@@ -64,13 +72,33 @@ export const getConcept = () => {
     },
     "http://publications.europa.eu/ontology/euvoc#xlDefinition": {
       "@id": "https://testdirektoratet.no/concept/${id}/definition/source"
+    },
+    "dcat:contactPoint": {
+      "@id": "https://testdirektoratet.no/concept/${id}/contactpoint"
+    },
+    "rdfs:seeAlso": {
+      "@id": "https://testdirektoratet.no/concept/relation"
+    }
+  }`,
+    )
+    .join(",");
+
+  const contactpoint = ids
+    .map(
+      (id) => `{
+    "@id": "https://testdirektoratet.no/concept/${id}/contactpoint",
+    "vcard:hasTelephone": {
+      "@id": "tel:+4700000000"
+    },
+    "vcard:hasEmail": {
+      "@id": "mailto:test@digdir.no"
     }
   }`,
     )
     .join(",");
 
   return `{
-  "@graph": [${resource}, ${euvoc}, ${concept}],
+  "@graph": [${resource}, ${definition}, ${concept}, ${contactpoint}],
   "@context": {
     "schema": "http://schema.org/",
     "adms": "http://www.w3.org/ns/adms#",

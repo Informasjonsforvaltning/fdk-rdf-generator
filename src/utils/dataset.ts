@@ -1,9 +1,9 @@
-import { generateIds } from "./id";
+import { generateIds } from "./string";
 
 export const getDataset = () => {
   const ids = generateIds();
 
-  const datasets = ids
+  const dataset = ids
     .map(
       (id) => `{
     "@id": "https://testdirektoratet.no/datasets/${id}",
@@ -16,9 +16,27 @@ export const getDataset = () => {
     },
     "dct:description": {
       "@language": "nb",
-      "@value": "Beskrivelse ${id}"
+      "@value": "Beskrivelse ${id}: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus nunc in felis pellentesque, ac gravida massa cursus. Maecenas viverra viverra justo eget facilisis."
     },
-    "@type": "dcat:Dataset"
+    "@type": "dcat:Dataset",
+    "dcat:contactPoint": {
+      "@id": "https://testdirektoratet.no/datasets/${id}/contactpoint"
+    },
+    "http://www.w3.org/ns/dcat#theme": {
+      "@id": "http://publications.europa.eu/resource/authority/data-theme/ENVI"
+    },
+    "dct:accessRights": {
+      "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+    },
+    "dct:subject": {
+      "@id": "https://testdirektoratet.no/concepts/relation"
+    },
+    "dct:relation": {
+      "@id": "https://testdirektoratet.no/datasets/relation"
+    },
+    "dcat:distribution": {
+      "@id": "https://testdirektoratet.no/dataset/${id}/distribution"
+    }
     }`,
     )
     .join(",");
@@ -38,8 +56,61 @@ export const getDataset = () => {
     "@type": "dcat:Catalog"
   }`;
 
+  const contactpoint = ids
+    .map(
+      (id) => `{
+    "@id": "https://testdirektoratet.no/dataset/${id}/contactpoint",
+    "vcard:hasTelephone": {
+      "@id": "tel:+4700000000"
+    },
+    "vcard:hasEmail": {
+      "@id": "mailto:test@digdir.no"
+    }
+  }`,
+    )
+    .join(",");
+
+  const distribution = ids
+    .map(
+      (id) => `{
+    "@id": "https://testdirektoratet.no/dataset/${id}/distribution",
+    "dcat:accessURL": {
+      "@id": "https://testdirektoratet.no/dataset/${id}/distribution/access"
+    },
+    "dct:title": [
+      {
+       "@language": "nb",
+         "@value": "Distribusjon ${id}"
+      }
+    ],
+    "dct:format": {
+      "@id": "http://publications.europa.eu/resource/authority/file-type/JSON"
+    },
+    "foaf:page": {
+      "@id": "https://testdirektoratet.no/dataset/${id}/distribution/page"
+    },
+    "dct:conformsTo": {
+      "@id": "https://testdirektoratet.no/dataset/${id}/distribution/conforms-to"
+    },
+    "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+    },
+    "dct:description": [
+      {
+        "@language": "nb",
+        "@value": "Beskrivelse distribusjon ${id}"
+      }
+    ],
+    "dcat:downloadURL": {
+      "@id": "https://testdirektoratet.no/dataset/${id}/distribution/download"
+    },
+    "@type": "dcat:Distribution"
+}`,
+    )
+    .join(",");
+
   return `{
-  "@graph": [${catalog}, ${datasets}],
+  "@graph": [${dataset}, ${catalog}, ${contactpoint}, ${distribution}],
   "@context": {
     "schema": "http://schema.org/",
     "cpsvno": "https://data.norge.no/vocabulary/cpsvno#",

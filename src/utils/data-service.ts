@@ -1,9 +1,9 @@
-import { generateIds } from "./id";
+import { generateIds } from "./string";
 
 export const getDataservice = () => {
   const ids = generateIds();
 
-  const apis = ids
+  const dataservice = ids
     .map(
       (id) => `{
     "@id": "https://testdirektoratet.no/data-services/${id}",
@@ -22,13 +22,38 @@ export const getDataservice = () => {
     },
     "dct:description": {
       "@language": "nb",
-      "@value": "Beskrivelse ${id}"
+      "@value": "Beskrivelse ${id}: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus nunc in felis pellentesque, ac gravida massa cursus. Maecenas viverra viverra justo eget facilisis."
     },
     "dct:accessRights": {
       "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
     },
     "@type": "dcat:DataService"
-    }`,
+    ,
+    "http://www.w3.org/ns/dcat#keyword": {
+      "@language": "en",
+      "@value": "Keyword ${id}"
+    },
+    "http://xmlns.com/foaf/0.1/page": {
+      "@id": "https://testdirektoratet.no/data-services/${id}/documentation"
+    },
+    "http://www.w3.org/ns/dcat#theme": {
+      "@id": "http://publications.europa.eu/resource/authority/data-theme/ENVI"
+    },
+    "http://www.w3.org/ns/dcat#endpointDescription": {
+      "@id": "https://testdirektoratet.no/data-services/${id}/endpoint-description"
+    },
+    "http://purl.org/dc/terms/format": [
+      {
+        "@id": "https://publications.europa.eu/resource/authority/file-type/XML"
+      },
+      {
+        "@id": "https://publications.europa.eu/resource/authority/file-type/TXT"
+      }
+    ],
+    "dcat:servesDataset": {
+      "@id": "https://testdirektoratet.no/dataset/relation"
+    }
+  }`,
     )
     .join(",");
 
@@ -36,7 +61,6 @@ export const getDataservice = () => {
     .map(
       (id) => `{
     "@id": "https://dataservice-catalog.staging.fellesdatakatalog.digdir.no/catalogs/312460726",
-
     "dcat:service": [
       {
         "@id": "https://testdirektoratet.no/data-services/${id}"
@@ -58,7 +82,7 @@ export const getDataservice = () => {
     .join(",");
 
   return `{
-  "@graph": [${apis}, ${catalog}],
+  "@graph": [${dataservice}, ${catalog}],
   "@context": {
     "dct": "http://purl.org/dc/terms/",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
