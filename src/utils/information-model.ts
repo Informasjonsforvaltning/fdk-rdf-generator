@@ -65,7 +65,7 @@ export const getInformationmodel = () => {
       "@value": "Digitaliseringsdirektoratets modellkatalog"
     },
     "dct:publisher": {
-      "@id": "https://organization-catalogue.staging.fellesdatakatalog.digdir.no/organizations/911527170"
+      "@id": "https://organization-catalogue.staging.fellesdatakatalog.digdir.no/organizations/312460726"
     },
     "dct:license": {
       "@id": "http://creativecommons.org/licenses/by/4.0/deed.no"

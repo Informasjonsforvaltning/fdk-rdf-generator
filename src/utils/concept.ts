@@ -68,7 +68,7 @@ export const getConcept = () => {
       "@value": "Verdi ${id}"
     },
     "dct:publisher": {
-      "@id": "https://data.brreg.no/enhetsregisteret/api/enheter/974761076"
+      "@id": "https://data.brreg.no/enhetsregisteret/api/enheter/312460726"
     },
     "http://publications.europa.eu/ontology/euvoc#xlDefinition": {
       "@id": "https://testdirektoratet.no/concept/${id}/definition/source"
