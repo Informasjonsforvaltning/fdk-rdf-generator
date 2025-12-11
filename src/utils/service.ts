@@ -1,77 +1,81 @@
-export const getService = (id: string) => {
+import { generateIds } from "./string";
+
+export const getService = (catalogId: string, count: number) => {
+  const ids = generateIds(count);
+  const outputs = ids.map(output).join(",");
+  const services = ids.map(service).join(",");
+  const contactpoints = ids.map(contactpoint).join(",");
+  const nodes = [outputs, services, contactpoints].join(",");
+
   return `{
-  "@id": "https://platform.altinn.no/resourceRegistry/pol-anmeldelse-ressurs",
-  "dct:keyword": [
-    {
-      "@language": "nb",
-      "@value": "politiet"
-    },
-    {
-      "@language": "nb",
-      "@value": "anmeldelse"
-    },
-    {
-      "@language": "nb",
-      "@value": "reported offence"
-    },
-    {
-      "@language": "nb",
-      "@value": "offence"
-    },
-    {
-      "@language": "nb",
-      "@value": "melding"
-    },
-    {
-      "@language": "nb",
-      "@value": "police"
-    }
-  ],
-  "dct:description": [
-    {
-      "@language": "nb",
-      "@value": "Gir tilgang til å lese innsendte anmeldelser på vegne av virksomheten."
-    },
-    {
-      "@language": "nn",
-      "@value": "Gir tilgang til å lesa innsende anmeldelser på vegner av verksemda."
-    },
-    {
-      "@language": "en",
-      "@value": "Gives permission to read reported offences on behalf of the business."
-    }
-  ],
-  "dct:title": [
-    {
-      "@language": "nb",
-      "@value": "Anmeldelse"
-    },
-    {
-      "@language": "en",
-      "@value": "Reported offence"
-    },
-    {
-      "@language": "nn",
-      "@value": "Anmeldelse (melding)"
-    }
-  ],
-  "cv:hasCompetentAuthority": {
-    "@id": "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/915429785"
-  },
-  "dct:identifier": "pol-anmeldelse-ressurs",
-  "@type": "cpsv:PublicService",
+  "@graph": [${nodes}],
   "@context": {
-    "schema": "http://schema.org/",
     "cv": "http://data.europa.eu/m8g/",
-    "eli": "http://data.europa.eu/eli/ontology#",
     "dct": "http://purl.org/dc/terms/",
-    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "dcat": "http://www.w3.org/ns/dcat#",
     "cpsv": "http://purl.org/vocab/cpsv#",
     "foaf": "http://xmlns.com/foaf/0.1/"
+  }}`;
+};
+
+const output = (id: string) => `{
+  "@id": "https://testdirektoratet.no/service/${id}/output",
+  "dct:title": {
+    "@language": "nb",
+    "@value": "Tjenesteresultat ${id}"
+  },
+  "dct:isPartOf": {
+    "@id": "https://testdirektoratet.no/datasets/relation"
+  },
+  "dct:description": {
+    "@language": "nb",
+    "@value": "Tjenesteresultat beskrivelse ${id}: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus nunc in felis pellentesque, ac gravida massa cursus. Maecenas viverra viverra justo eget facilisis."
+  },
+  "@type": "cv:Output"
+}`;
+
+const service = (id: string) => `{
+  "@id": "https://testdirektoratet.no/service/${id}",
+  "dct:title": {
+    "@language": "nb",
+    "@value": "Tittel ${id}"
+  },
+  "cpsv:hasCompetentAuthority": {
+    "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+  },
+  "@type": "cpsv:PublicService",
+  "dct:description": {
+    "@language": "nb",
+    "@value": "Beskrivelse ${id}: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus nunc in felis pellentesque, ac gravida massa cursus. Maecenas viverra viverra justo eget facilisis."
+  },
+  "cv:processingTime": "P4W",
+  "cpsv:produces": {
+    "@id": "https://testdirektoratet.no/service/${id}/output"
+  },
+  "dct:identifier": "${id}",
+  "cv:contactPoint": {
+    "@id": "https://testdirektoratet.no/service/${id}/contactpoint"
+  },
+  "dct:subject": {
+    "@id": "https://testdirektoratet.no/concepts/relation"
+  },
+  "adms:status": {
+    "@id": "http://publications.europa.eu/resource/authority/distribution-status/COMPLETED"
+  },
+  "cv:thematicArea": [
+    {
+      "@id": "http://eurovoc.europa.eu/2663"
+    },
+    {
+      "@id": "https://psi.norge.no/los/ord/parkering-og-hvileplasser"
+    }
+  ],
+  "foaf:homepage": {
+    "@id": "https://testdirektoratet.no/homepage"
   }
 }`;
-};
+
+const contactpoint = (id: string) => `{
+  "@id": "https://testdirektoratet.no/service/${id}/contactpoint",
+  "cv:telephone": "+4700000000",
+  "cv:email": "test@digdir.no"
+}`;

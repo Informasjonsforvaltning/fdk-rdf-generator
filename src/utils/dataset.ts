@@ -1,80 +1,126 @@
-export const getDataset = (id: string) => {
+import { generateIds } from "./string";
+
+export const getDataset = (catalogId: string, count: number) => {
+  const ids = generateIds(count);
+  const catalogs = catalog(ids, catalogId);
+  const datasets = ids.map(dataset).join(",");
+  const contactpoints = ids.map(contactpoint).join(",");
+  const distributions = ids.map(distribution).join(",");
+  const nodes = [catalogs, datasets, contactpoints, distributions].join(",");
+
   return `{
-  "@graph": [
-    {
-      "@id": "https://data.dfo.no/distributions/84189fc8-de97-475e-bfd7-c34c761ceb9b",
-      "dcat:downloadURL": {
-        "@id": "https://adaapnedataprodst.blob.core.windows.net/klimaintensitet/2019/Klimaintensitet_2019.csv"
-      },
-      "dcat:accessURL": {
-        "@id": "https://dfo.no/nokkeltall-og-statistikk/utslippsfaktorer-statlige-innkjop#anchorTOC_Tabell_med_utslippsfaktorer_2"
-      },
-      "dct:title": {
-        "@language": "nb",
-        "@value": "CSV-fil om klimaintensitet"
-      },
-      "dct:license": {
-        "@id": "https://creativecommons.org/licenses/by/4.0/deed.no"
-      },
-      "dct:format": {
-        "@id": "http://publications.europa.eu/resource/authority/file-type/CSV"
-      },
-      "dct:description": {
-        "@language": "nb",
-        "@value": "<div><span style=\"display:inline !important\">CSV-fil med klimaintensiteter.</span></div>"
-      },
-      "@type": "dcat:Distribution"
-    },
-    {
-      "@id": "https://data.dfo.no/datasets/c52f7edf-98b3-404b-a4d2-e2677fb0572d/.well-known/skolem/8ecf70df-6694-3b06-bcb5-1043d5dbbb08",
-      "ns1:hasOrganizationName": {
-        "@language": "nb",
-        "@value": "Direktoratet for forvaltning og økonomistyring"
-      },
-      "ns1:hasEmail": {
-        "@id": "mailto:data@dfo.no"
-      },
-      "@type": "ns1:Organization"
-    },
-    {
-      "@id": "https://data.dfo.no/datasets/c52f7edf-98b3-404b-a4d2-e2677fb0572d",
-      "dcat:distribution": {
-        "@id": "https://data.dfo.no/distributions/84189fc8-de97-475e-bfd7-c34c761ceb9b"
-      },
-      "dct:title": {
-        "@language": "nb",
-        "@value": "Utslippsintensiteter"
-      },
-      "dct:description": {
-        "@language": "nb",
-        "@value": "Dataene består av utslipp (CO2-ekvivalenter) per krone fordelt på innkjøpsrelevante artskontoer i henhold til statsregnskapet. Dataene gir utslippsintensiteter fordelt på scope 1, 2 og 3, samt innland og utland."
-      },
-      "dct:accrualPeriodicity": {
-        "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
-      },
-      "dcat:keyword": {
-        "@language": "nb",
-        "@value": "Anskaffelser"
-      },
-      "dct:publisher": {
-        "@id": "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/986252932"
-      },
-      "@type": "dcat:Dataset",
-      "dcat:contactPoint": {
-        "@id": "https://data.dfo.no/datasets/c52f7edf-98b3-404b-a4d2-e2677fb0572d/.well-known/skolem/8ecf70df-6694-3b06-bcb5-1043d5dbbb08"
-      },
-      "dct:accessRights": {
-        "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
-      },
-      "dcat:theme": {
-        "@id": "https://psi.norge.no/los/ord/natur-klima-og-miljo"
-      }
-    }
-  ],
+  "@graph": [${nodes}],
   "@context": {
+    "schema": "http://schema.org/",
+    "cpsvno": "https://data.norge.no/vocabulary/cpsvno#",
+    "eli": "http://data.europa.eu/eli/ontology#",
+    "adms": "http://www.w3.org/ns/adms#",
+    "iso": "http://iso.org/25012/2008/dataquality/",
+    "dqv": "http://www.w3.org/ns/dqv#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "oa": "http://www.w3.org/ns/oa#",
     "dct": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dcat": "http://www.w3.org/ns/dcat#",
-    "ns1": "http://www.w3.org/2006/vcard/ns#"
+    "prov": "http://www.w3.org/ns/prov#",
+    "cpsv": "http://purl.org/vocab/cpsv#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  }}`;
+};
+
+const catalog = (ids: string[], catalogId: string) => `{
+  "@id": "https://testdirektoratet.no/dataset-catalog/${catalogId}",
+  "dcat:dataset": [${ids
+    .map((id) => `{"@id": "https://testdirektoratet.no/datasets/${id}"}`)
+    .join(",")}],
+  "dct:publisher": {
+    "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+  },
+  "dct:title": {
+    "@language": "en",
+    "@value": "Dataset catalog belonging to 312460726"
+  },
+  "@type": "dcat:Catalog"
+}`;
+
+const dataset = (id: string) => `{
+  "@id": "https://testdirektoratet.no/datasets/${id}",
+  "dct:title": {
+    "@language": "nb",
+    "@value": "Tittel ${id}"
+  },
+  "dct:publisher": {
+    "@id": "https://organization-catalog.staging.fellesdatakatalog.digdir.no/organizations/312460726"
+  },
+  "dct:description": {
+    "@language": "nb",
+    "@value": "Beskrivelse ${id}: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus nunc in felis pellentesque, ac gravida massa cursus. Maecenas viverra viverra justo eget facilisis."
+  },
+  "@type": "dcat:Dataset",
+  "dcat:contactPoint": {
+    "@id": "https://testdirektoratet.no/datasets/${id}/contactpoint"
+  },
+  "http://www.w3.org/ns/dcat#theme": {
+    "@id": "http://publications.europa.eu/resource/authority/data-theme/ENVI"
+  },
+  "dct:accessRights": {
+    "@id": "http://publications.europa.eu/resource/authority/access-right/PUBLIC"
+  },
+  "dct:subject": {
+    "@id": "https://testdirektoratet.no/concepts/relation"
+  },
+  "dct:relation": {
+    "@id": "https://testdirektoratet.no/datasets/relation"
+  },
+  "dcat:distribution": {
+    "@id": "https://testdirektoratet.no/dataset/${id}/distribution"
   }
 }`;
-};
+
+const contactpoint = (id: string) => `{
+  "@id": "https://testdirektoratet.no/dataset/${id}/contactpoint",
+  "vcard:hasTelephone": {
+    "@id": "tel:+4700000000"
+  },
+  "vcard:hasEmail": {
+    "@id": "mailto:test@digdir.no"
+  }
+}`;
+
+const distribution = (id: string) => `{
+  "@id": "https://testdirektoratet.no/dataset/${id}/distribution",
+  "dcat:accessURL": {
+    "@id": "https://testdirektoratet.no/dataset/${id}/distribution/access"
+  },
+  "dct:title": [
+    {
+     "@language": "nb",
+       "@value": "Distribusjon ${id}"
+    }
+  ],
+  "dct:format": {
+    "@id": "http://publications.europa.eu/resource/authority/file-type/JSON"
+  },
+  "foaf:page": {
+    "@id": "https://testdirektoratet.no/dataset/${id}/distribution/page"
+  },
+  "dct:conformsTo": {
+    "@id": "https://testdirektoratet.no/dataset/${id}/distribution/conforms-to"
+  },
+  "dcat:mediaType": {
+    "@id": "https://www.iana.org/assignments/media-types/application/json"
+  },
+  "dct:description": [
+    {
+      "@language": "nb",
+      "@value": "Beskrivelse distribusjon ${id}"
+    }
+  ],
+  "dcat:downloadURL": {
+    "@id": "https://testdirektoratet.no/dataset/${id}/distribution/download"
+  },
+  "@type": "dcat:Distribution"
+}`;

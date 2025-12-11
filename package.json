@@ -9,6 +9,7 @@
   },
   "scripts": {
     "dev": "bun run --hot src/index.ts",
-    "build": "bun build src/build.ts"
+    "build": "bun build src/build.ts",
+    "generate": "bun run src/generate.ts"
   }
 }
