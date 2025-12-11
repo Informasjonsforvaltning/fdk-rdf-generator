@@ -9,14 +9,15 @@ import { getInformationmodel } from "./utils/information-model";
 import { generateIds } from "./utils/string";
 
 const outDir = path.resolve("file");
-const generators: Record<string, (count: number) => string> = {
-  "dataset.json": getDataset,
-  "data-service.json": getDataservice,
-  "service.json": getService,
-  "event.json": getEvent,
-  "concept.json": getConcept,
-  "information-model.json": getInformationmodel,
-};
+const generators: Record<string, (catalogId: string, count: number) => string> =
+  {
+    "dataset.json": getDataset,
+    "data-service.json": getDataservice,
+    "service.json": getService,
+    "event.json": getEvent,
+    "concept.json": getConcept,
+    "information-model.json": getInformationmodel,
+  };
 const variations: Array<[number, number]> = [
   [10, 5],
   [10, 100],
@@ -33,14 +34,13 @@ async function run() {
     const variantDir = path.join(outDir, `${filesToGenerate}-${count}`);
     await mkdir(variantDir, { recursive: true });
 
-    // generate UUIDs to prefix each file
     const ids = generateIds(filesToGenerate);
 
     for (const [fileName, gen] of Object.entries(generators)) {
       for (const id of ids) {
         const dest = path.join(variantDir, `${id}-${fileName}`);
         try {
-          const raw = gen(count);
+          const raw = gen(id, count);
           let output = raw;
 
           try {

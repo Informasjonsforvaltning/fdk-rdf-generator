@@ -1,9 +1,9 @@
 import { generateIds } from "./string";
 
-export const getDataservice = (count: number) => {
+export const getDataservice = (catalogId: string, count: number) => {
   const ids = generateIds(count);
   const dataservices = ids.map(dataservice).join(",");
-  const catalogs = ids.map(catalog).join(",");
+  const catalogs = ids.map((id) => catalog(id, catalogId)).join(",");
   const nodes = [dataservices, catalogs].join(",");
 
   return `{
@@ -68,8 +68,8 @@ const dataservice = (id: string) => `{
   }
 }`;
 
-const catalog = (id: string) => `{
-  "@id": "https://dataservice-catalog.staging.fellesdatakatalog.digdir.no/catalogs/312460726",
+const catalog = (id: string, catalogId: string) => `{
+  "@id": "https://testdirektoratet.no/api-catalog/${catalogId}",
   "dcat:service": [
     {
       "@id": "https://testdirektoratet.no/data-services/${id}"

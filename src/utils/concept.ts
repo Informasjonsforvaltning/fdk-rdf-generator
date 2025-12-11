@@ -1,6 +1,6 @@
 import { generateIds } from "./string";
 
-export const getConcept = (count: number) => {
+export const getConcept = (catalogId: string, count: number) => {
   const ids = generateIds(count);
   const resources = ids.map(resource).join(",");
   const definitions = ids.map(definition).join(",");

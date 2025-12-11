@@ -1,9 +1,9 @@
 import { generateIds } from "./string";
 
-export const getInformationmodel = (count: number) => {
+export const getInformationmodel = (catalogId: string, count: number) => {
   const ids = generateIds(count);
   const models = ids.map(model).join(",");
-  const catalogs = ids.map(catalog).join(",");
+  const catalogs = ids.map((id) => catalog(id, catalogId)).join(",");
   const nodes = [models, catalogs].join(",");
 
   return `{
@@ -71,8 +71,8 @@ const model = (id: string) => `{
   }
 }`;
 
-const catalog = (id: string) => `{
-  "@id": "digdir:Katalog",
+const catalog = (id: string, catalogId: string) => `{
+  "@id": "https://testdirektoratet.no/information-model-catalog/${catalogId}",
   "modelldcatno:model": [{
     "@id": "https://testdirektoratet.no/information-model/${id}"
   }],

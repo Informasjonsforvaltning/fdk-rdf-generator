@@ -1,8 +1,8 @@
 import { generateIds } from "./string";
 
-export const getDataset = (count: number) => {
+export const getDataset = (catalogId: string, count: number) => {
   const ids = generateIds(count);
-  const catalogs = catalog(ids);
+  const catalogs = catalog(ids, catalogId);
   const datasets = ids.map(dataset).join(",");
   const contactpoints = ids.map(contactpoint).join(",");
   const distributions = ids.map(distribution).join(",");
@@ -31,8 +31,8 @@ export const getDataset = (count: number) => {
   }}`;
 };
 
-const catalog = (ids: string[]) => `{
-  "@id": "https://testdirektoratet.no/dataset-catalog",
+const catalog = (ids: string[], catalogId: string) => `{
+  "@id": "https://testdirektoratet.no/dataset-catalog/${catalogId}",
   "dcat:dataset": [${ids
     .map((id) => `{"@id": "https://testdirektoratet.no/datasets/${id}"}`)
     .join(",")}],
