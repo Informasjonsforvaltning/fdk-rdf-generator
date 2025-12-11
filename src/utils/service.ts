@@ -1,17 +1,11 @@
 import { generateIds } from "./string";
 
-export const getService = (catalogCount: number, count: number) => {
-  const catalogIds = generateIds(catalogCount);
-
-  const nodes = catalogIds.map((catalogId) => {
-    const ids = generateIds(count);
-
-    const outputs = ids.map(output).join(",");
-    const services = ids.map(service).join(",");
-    const contactpoints = ids.map(contactpoint).join(",");
-
-    return [outputs, services, contactpoints].join(",");
-  });
+export const getService = (count: number) => {
+  const ids = generateIds(count);
+  const outputs = ids.map(output).join(",");
+  const services = ids.map(service).join(",");
+  const contactpoints = ids.map(contactpoint).join(",");
+  const nodes = [outputs, services, contactpoints].join(",");
 
   return `{
   "@graph": [${nodes}],

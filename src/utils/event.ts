@@ -1,18 +1,10 @@
 import { generateIds } from "./string";
 
-export const getEvent = (catalogCount: number, count: number) => {
-  const catalogIds = generateIds(catalogCount);
-
-  const nodes = catalogIds
-    .map((catalogId) => {
-      const ids = generateIds(count);
-
-      const events = ids.map(event).join(",");
-      const concepts = ids.map(concept).join(",");
-
-      return [events, concepts].join(",");
-    })
-    .join(",");
+export const getEvent = (count: number) => {
+  const ids = generateIds(count);
+  const events = ids.map(event).join(",");
+  const concepts = ids.map(concept).join(",");
+  const nodes = [events, concepts].join(",");
 
   return `{
   "@graph": [${nodes}],

@@ -1,20 +1,12 @@
 import { generateIds } from "./string";
 
-export const getDataset = (catalogCount: number, count: number) => {
-  const catalogIds = generateIds(catalogCount);
-
-  const nodes = catalogIds
-    .map((catalogId) => {
-      const ids = generateIds(count);
-
-      const catalogs = catalog(ids);
-      const datasets = ids.map(dataset).join(",");
-      const contactpoints = ids.map(contactpoint).join(",");
-      const distributions = ids.map(distribution).join(",");
-
-      return [catalogs, datasets, contactpoints, distributions].join(",");
-    })
-    .join(",");
+export const getDataset = (count: number) => {
+  const ids = generateIds(count);
+  const catalogs = catalog(ids);
+  const datasets = ids.map(dataset).join(",");
+  const contactpoints = ids.map(contactpoint).join(",");
+  const distributions = ids.map(distribution).join(",");
+  const nodes = [catalogs, datasets, contactpoints, distributions].join(",");
 
   return `{
   "@graph": [${nodes}],
