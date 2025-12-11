@@ -73,9 +73,6 @@ const catalog = (id: string, catalogId: string) => `{
   "dcat:service": [
     {
       "@id": "https://testdirektoratet.no/data-services/${id}"
-    },
-    {
-      "@id": "https://testdirektoratet.no/data-services/6290a62ee8ed2c5c6d2adda7"
     }
   ],
   "dct:title": {
