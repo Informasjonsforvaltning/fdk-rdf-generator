@@ -1,53 +1,21 @@
 import { generateIds } from "./string";
 
-export const getEvent = () => {
-  const ids = generateIds();
+export const getEvent = (catalogCount: number, count: number) => {
+  const catalogIds = generateIds(catalogCount);
 
-  const event = ids
-    .map(
-      (id) => `{
-    "@id": "https://testdirektoratet.no/event/${id}",
-    "dct:description": [{
-      "@language": "nb",
-      "@value": "Beskrivelse ${id}: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus nunc in felis pellentesque, ac gravida massa cursus. Maecenas viverra viverra justo eget facilisis."
-    }],
-    "dct:title": [{
-      "@language": "nb",
-      "@value": "Tittel ${id}"
-    }],
-    "dct:identifier": {
-      "@value": "https://testdirektoratet.no/event/${id}",
-      "@type": "xsd:anyURI"
-    },
-    "dct:subject": {
-      "@id": "https://testdirektoratet.no/event/${id}/subject"
-    },
-    "dct:type": {
-      "@id": "https://data.norge.no/vocabulary/event-type#data-changed"
-    },
-    "@type": "cv:Event",
-    "cpsvno:mayTrigger": {
-      "@id": "https://testdirektoratet.no/service/relation"
-    }
-  }`,
-    )
-    .join(",");
+  const nodes = catalogIds
+    .map((catalogId) => {
+      const ids = generateIds(count);
 
-  const concept = ids
-    .map(
-      (id) => `{
-    "@id": "https://testdirektoratet.no/event/${id}/subject",
-    "skos:prefLabel": {
-      "@language": "nb",
-      "@value": "Begrepstittel ${id}"
-    },
-    "@type": "skos:Concept"
-  }`,
-    )
+      const events = ids.map(event).join(",");
+      const concepts = ids.map(concept).join(",");
+
+      return [events, concepts].join(",");
+    })
     .join(",");
 
   return `{
-  "@graph": [${event}, ${concept}],
+  "@graph": [${nodes}],
   "@context": {
     "schema": "http://schema.org/",
     "cpsvno": "https://data.norge.no/vocabulary/cpsvno#",
@@ -72,3 +40,38 @@ export const getEvent = () => {
     "foaf": "http://xmlns.com/foaf/0.1/"
   }}`;
 };
+
+const event = (id: string) => `{
+  "@id": "https://testdirektoratet.no/event/${id}",
+  "dct:description": [{
+    "@language": "nb",
+    "@value": "Beskrivelse ${id}: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus nunc in felis pellentesque, ac gravida massa cursus. Maecenas viverra viverra justo eget facilisis."
+  }],
+  "dct:title": [{
+    "@language": "nb",
+    "@value": "Tittel ${id}"
+  }],
+  "dct:identifier": {
+    "@value": "https://testdirektoratet.no/event/${id}",
+    "@type": "xsd:anyURI"
+  },
+  "dct:subject": {
+    "@id": "https://testdirektoratet.no/event/${id}/subject"
+  },
+  "dct:type": {
+    "@id": "https://data.norge.no/vocabulary/event-type#data-changed"
+  },
+  "@type": "cv:Event",
+  "cpsvno:mayTrigger": {
+    "@id": "https://testdirektoratet.no/service/relation"
+  }
+}`;
+
+const concept = (id: string) => `{
+  "@id": "https://testdirektoratet.no/event/${id}/subject",
+  "skos:prefLabel": {
+    "@language": "nb",
+    "@value": "Begrepstittel ${id}"
+  },
+  "@type": "skos:Concept"
+}`;

@@ -10,48 +10,60 @@ const server = Bun.serve({
     "/": new Response("OK"),
     "/health": new Response("OK"),
 
-    "/concept": () => {
-      return new Response(getConcept(), {
+    "/concept/:catalogs/:count": (request) => {
+      const catalogs = Number(request.params.catalogs);
+      const count = Number(request.params.count);
+      return new Response(getConcept(catalogs, count), {
         headers: {
           "Content-Type": "application/json",
         },
       });
     },
 
-    "/data-service": () => {
-      return new Response(getDataservice(), {
+    "/data-service/:catalogs/:count": (request) => {
+      const catalogs = Number(request.params.catalogs);
+      const count = Number(request.params.count);
+      return new Response(getDataservice(catalogs, count), {
         headers: {
           "Content-Type": "application/json",
         },
       });
     },
 
-    "/dataset": () => {
-      return new Response(getDataset(), {
+    "/dataset/:catalogs/:count": (request) => {
+      const catalogs = Number(request.params.catalogs);
+      const count = Number(request.params.count);
+      return new Response(getDataset(catalogs, count), {
         headers: {
           "Content-Type": "application/json",
         },
       });
     },
 
-    "/event": () => {
-      return new Response(getEvent(), {
+    "/event/:catalogs/:count": (request) => {
+      const catalogs = Number(request.params.catalogs);
+      const count = Number(request.params.count);
+      return new Response(getEvent(catalogs, count), {
         headers: {
           "Content-Type": "application/json",
         },
       });
     },
 
-    "/information-model": () => {
-      return new Response(getInformationmodel(), {
+    "/information-model/:catalogs/:count": (request) => {
+      const catalogs = Number(request.params.catalogs);
+      const count = Number(request.params.count);
+      return new Response(getInformationmodel(catalogs, count), {
         headers: {
           "Content-Type": "application/json",
         },
       });
     },
 
-    "/service": () => {
-      return new Response(getService(), {
+    "/service/:catalogs/:count": (request) => {
+      const catalogs = Number(request.params.catalogs);
+      const count = Number(request.params.count);
+      return new Response(getService(count), {
         headers: {
           "Content-Type": "application/json",
         },
