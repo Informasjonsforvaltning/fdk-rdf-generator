@@ -37,14 +37,18 @@ async function run() {
       const url = `https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-rdf-generator/${branch}/file/${folder}/${catalogId}-${type}.json`;
       const payload = typeMap[type](catalogId, url, count);
 
-      fetch("https://bun.com/api", {
-        method: "POST",
-        body: JSON.stringify(payload),
-        headers: {
-          "Content-Type": "application/json",
-          "X-API-Key": process.env.API_KEY || "Missing API Key",
+      console.log(`Publishing ${file} as ${type} (${url})`);
+      fetch(
+        `https://harvest-admin.api.test.fellesdatakatalog.digdir.no/organizations/312460726/datasources`,
+        {
+          method: "POST",
+          body: JSON.stringify(payload),
+          headers: {
+            "Content-Type": "application/json",
+            "X-API-Key": process.env.API_KEY || "Missing API Key",
+          },
         },
-      });
+      );
     } catch (error) {
       console.error(`Error processing file ${file}:`, error);
     } finally {
