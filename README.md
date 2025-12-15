@@ -23,3 +23,11 @@ bun dev
 ```
 bun run generate
 ```
+
+5. Publish
+
+- Push generated files to branch (see publish.ts for expected path)
+
+- Update `API_KEY` in .env
+
+- Run `bun run publish`

@@ -10,6 +10,7 @@
   "scripts": {
     "dev": "bun run --hot src/index.ts",
     "build": "bun build src/build.ts",
-    "generate": "bun run src/generate.ts"
+    "generate": "bun run src/generate.ts",
+    "publish": "bun run src/publish.ts"
   }
 }
